@@ -1,10 +1,12 @@
 import time
 import random
+import os
 from datetime import datetime
 from telegram import Bot
 
-BOT_TOKEN = "TON_BOT_TOKEN"
-CHANNEL_ID = "@TON_CANAL"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
+
 
 bot = Bot(token=BOT_TOKEN)
 
